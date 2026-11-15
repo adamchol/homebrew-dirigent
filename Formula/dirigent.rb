@@ -3,13 +3,13 @@
 #
 #   brew install adamchol/dirigent/dirigent
 #   dirigent login https://dirigent.example.com
-#   brew services start dirigent          # the host, as yours (a launchd agent)
-#   sudo dirigent host install --system   # or as the machine's (a launchd daemon)
+#   brew services start dirigent          # the host, as yours: a launchd agent (never with sudo,
+#                                         # which makes it a daemon outside your login session)
 class Dirigent < Formula
   desc "Command-line for dirigent: sign in, import sessions, and host players"
   homepage "https://github.com/adamchol/dirigent-0"
-  url "https://github.com/adamchol/dirigent-0/archive/refs/tags/v0.1.11.tar.gz"
-  sha256 "8d4767b5613455c07f0fd3d1dbb529342bdb3cdfb207d76fc74ab11a917797f2"
+  url "https://github.com/adamchol/dirigent-0/archive/refs/tags/v0.1.12.tar.gz"
+  sha256 "0b31fedf4bd7d0400c104d5794d79adf43ea225bf5b6623e879bb7490d25d5b8"
   head "https://github.com/adamchol/dirigent-0.git", branch: "master"
 
   depends_on "rust" => :build
