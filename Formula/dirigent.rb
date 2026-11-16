@@ -8,8 +8,8 @@
 class Dirigent < Formula
   desc "Command-line for dirigent: sign in, import sessions, and host players"
   homepage "https://github.com/adamchol/dirigent-0"
-  url "https://github.com/adamchol/dirigent-0/archive/refs/tags/v0.1.12.tar.gz"
-  sha256 "0b31fedf4bd7d0400c104d5794d79adf43ea225bf5b6623e879bb7490d25d5b8"
+  url "https://github.com/adamchol/dirigent-0/archive/refs/tags/v0.1.14.tar.gz"
+  sha256 "249c6be66a7bf5f89e894d6b785616923919c36c21721c3606c365769ea5040f"
   head "https://github.com/adamchol/dirigent-0.git", branch: "master"
 
   depends_on "rust" => :build
